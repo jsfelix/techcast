@@ -1,5 +1,6 @@
 import format from  'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
+import Image from 'next/image';
 
 import styles from './styles.module.scss';
 
@@ -11,7 +12,7 @@ export default function Header() {
 
   return (
     <header className={styles.container}>
-      <img src="/logo.png" alt="Techcast" />
+      <Image width={166} height={28} src="/logo.png" alt="Techcast" />
 
       <p>Podcasts de qualidade para você</p>
 
